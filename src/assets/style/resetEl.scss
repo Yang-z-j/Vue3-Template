@@ -1,0 +1,49 @@
+// 重置element-ui样式
+// el-table
+$table-color: var(--text-color); // 字体颜色
+$table-bgColor: var(--bg-color); // 背景颜色
+$table-bgColor-hover: #f5f7fa; // 鼠标经过单元行背景颜色
+$table-bdColor: #000; // 边框颜色
+// el-button
+$button-color: var(--text-color); // 字体颜色
+$button-color-hover: #444; // 鼠标经过字体颜色
+
+// 表格样式
+.el-table {
+  .cell {
+    color: $table-color;
+  }
+  .el-table__border-left-patch {
+    background-color: $table-bdColor;
+  }
+  div.el-table__inner-wrapper {
+    &::before,
+    &::after {
+      background-color: $table-bdColor;
+    }
+    td.el-table__cell,
+    th.el-table__cell.is-leaf {
+      border-color: $table-bdColor;
+      background-color: $table-bgColor;
+    }
+    .el-table__row:hover {
+      .el-table__cell {
+        background-color: $table-bgColor-hover;
+      }
+    }
+  }
+}
+
+div.el-table--border {
+  &::after {
+    background-color: $table-bdColor;
+  }
+}
+
+button.el-button {
+  color: $button-color;
+}
+button.el-button:focus,
+button.el-button:hover {
+  color: $button-color-hover;
+}

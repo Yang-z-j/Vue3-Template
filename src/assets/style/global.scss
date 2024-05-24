@@ -1,0 +1,91 @@
+/**
+  CSS 初始化样式
+*/
+/* 根伪类 */
+:root {
+  /* 自定义属性 */
+  --text-color: #333; /* 文本颜色 */
+  --bg-color: #fff; /* 背景颜色 */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+}
+
+body,
+input,
+select,
+button,
+textarea {
+  color: var(--text-color);
+  font: 16px/1.5 'Arial', 'Microsoft YaHei', 'sans-serif';
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+dl,
+dd {
+  margin: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+input,
+select,
+textarea {
+  outline: none;
+}
+
+button {
+  border-radius: 2px;
+  border: 1px solid var(--text-color);
+  background-color: var(--bg-color);
+}
+
+button,
+select {
+  cursor: pointer;
+}
+
+a,
+a:hover {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+ul,
+li,
+ol {
+  list-style-type: none;
+}
+
+i,
+em {
+  font-style: normal;
+}
