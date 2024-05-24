@@ -66,9 +66,5 @@ export default defineConfig({
     alias: {
       '@': resolve(__dirname, './src') // 路径别名
     }
-  },
-  server: {
-    host: '127.0.0.1', // 主机
-    port: 5055 // 端口
   }
 });
